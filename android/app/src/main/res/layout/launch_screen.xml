@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/launch_screen_anim">
+    android:layout_height="match_parent">
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/launch_screen_anim"
+        android:scaleType="fitCenter"
+        />
+        <!--
+          android:scaleType="fitXY" you could do this instead of
+          fitCenter and it's better you use an image without a background.
+          You can still set background image on its own.
+          And you may not need the drawable-hdpi folders,
+          those ones are supposed to help you when dealing with different sizes
+          of screens => then different sizes of the splash screen image
+          we will see how to deal with that 
+        -->
 </LinearLayout>
